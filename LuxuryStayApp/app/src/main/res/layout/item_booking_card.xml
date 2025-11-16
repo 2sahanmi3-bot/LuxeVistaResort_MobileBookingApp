@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#CCFFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iv_lodge_image"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="1"/>
+
+        <TextView
+            android:id="@+id/tv_lodge_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Spruce Hill Lodge"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/iv_lodge_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_lodge_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$450/night"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_lodge_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_lodge_taxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+$25.00 taxes"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_lodge_price"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_lodge_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select dates"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_lodge_taxes"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reserve"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="Reserve"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:cornerRadius="24dp"
+            app:backgroundTint="#FFFFFF"
+            app:strokeColor="#FF9800"
+            app:strokeWidth="2dp"
+            android:textColor="#FF9800"
+            app:layout_constraintTop_toBottomOf="@id/tv_lodge_dates"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView> 

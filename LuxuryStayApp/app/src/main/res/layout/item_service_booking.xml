@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/iv_service_booking_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:background="#F0F0F0"
+        android:layout_marginEnd="12dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_service_booking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1A3C34"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_booking_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service description"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_booking_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: Jan 01, 2025"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_booking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 10:00 AM"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_service_booking_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: PENDING"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel_service_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#FF4444"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="8dp"/>
+
+</LinearLayout> 

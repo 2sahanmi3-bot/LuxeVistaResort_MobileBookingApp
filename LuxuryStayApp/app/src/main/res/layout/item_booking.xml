@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tv_booking_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking details"
+        android:textSize="16sp"
+        android:textColor="#222"/>
+
+    <Button
+        android:id="@+id/btn_cancel_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Booking"
+        android:backgroundTint="#FF4444"
+        android:textColor="#FFF"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout> 
